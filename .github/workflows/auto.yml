@@ -26,26 +26,29 @@ jobs:
     steps:
       - name: Setup repo
         uses: actions/checkout@v1
-        
+       
       - name: Set up Node.js
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-       # Install iOS 11.4 Runtime      
+            
       - name: Install iOS 13.7 Runtime        
         run: |  
           gem install xcode-install
           xcversion simulators --install='iOS 13.7'       
       - name: Set up Appium
         run: npm install -g appium
+
       - name: Set up hombrew
         run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
       - name: Set up carthage
         run: brew install carthage
+
       - name: Install package
         run: npm install
+
       - name: Run test
         run: npm run test
 
-      - name: Run Tests
-        run: deno test -A --unstable
+    
