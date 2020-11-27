@@ -2,7 +2,7 @@
 describe('Index', () => {
   before(async () => {
 ​
-    browser.url('https://qasd-test.cybozu.com/k/25/');
+    browser.url('https://qasd-test.cybozu.com/k/m/25/');
     // const localSettingForDisableWelcomeInfo = 'window.localStorage.setItem("gaia.1::com.cybozu.kintone.mobile.LocalSetting", \'{"v2NavigationPanelButtonTooltipDisplayed":true,"v2WelcomeDialogDisplayed":true}\')';
     // browser.executeScript(localSettingForDisableWelcomeInfo, [])
     browser.$("div.form-username-slash input[name='username']").setValue("admin");
@@ -35,7 +35,7 @@ describe('Index', () => {
 ​
 describe('Create', () => {
   before(() => {
-    browser.url('https://qasd-test.cybozu.com/k/25/');
+    browser.url('https://qasd-test.cybozu.com/k/m/25/');
     $(".gaia-mobile-v2-app-indextoolbar-addrecord-border").click();
     browser.pause(5000);
   });
@@ -63,7 +63,7 @@ describe('Create', () => {
 ​
 describe('Detail', () => {
   before(() => {
-    browser.url('https://qasd-test.cybozu.com/k/25/show#record=2');
+    browser.url('https://qasd-test.cybozu.com/k/m/25/show#record=2');
     browser.pause(5000);
   });
 ​
@@ -90,7 +90,7 @@ describe('Detail', () => {
 ​
 describe('Edit', () => {
   before(() => {
-    browser.url('https://qasd-test.cybozu.com/k/25/show#record=2');
+    browser.url('https://qasd-test.cybozu.com/k/m/25/show#record=2');
     $('.gaia-mobile-v2-app-record-showtoolbar-editrecord-border').click();
     browser.pause(5000);
   });
