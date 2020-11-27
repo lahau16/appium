@@ -1,3 +1,6 @@
+var exec = require('child_process').exec, child;
+
+
 // // import { expect } from 'chai';
 // describe('Index', () => {
 //   before(async () => {
@@ -116,11 +119,23 @@
 //   });
 // });
 
+
 describe('webdriver.io page', () => {
-  it('should have the right title', async () => {
+  it('should have the right title', () => {
+    child = exec('ping -c 2 8.8.8.8',
+    function (error: any, stdout: any, stderr: any) {
+        console.log('stdout: ' + stdout);
+        console.log('stderr: ' + stderr);
+        if (error !== null) {
+             console.log('exec error: ' + error);
+        }
+    });
+    child();
       // Arrange
-      await browser.url('https://tiki.vn');
-      let pageTitle = await browser.getTitle()
+      console.log("Hau ne")
+      browser.url('https://tiki.vn');
+      console.log("fdjfsdkjfs")
+      let pageTitle = browser.getTitle()
       console.log(`Page title is: ${pageTitle}`);
   })
 })

@@ -36,9 +36,9 @@ jobs:
         run: |  
           gem install xcode-install
           xcversion simulators --install='iOS 13.7'    
-      - name: Create - iPhone11 on iOS 13.7     
-        run: |
-           xcrun simctl create TestiPhone11 com.apple.CoreSimulator.SimDeviceType.iPhone-11 com.apple.CoreSimulator.SimRuntime.iOS-13-7 > deviceid.txt 
+      # - name: Create - iPhone11 on iOS 13.7     
+      #   run: |
+      #      xcrun simctl create TestiPhone11 com.apple.CoreSimulator.SimDeviceType.iPhone-11 com.apple.CoreSimulator.SimRuntime.iOS-13-7 > deviceid.txt 
       
       - name: Set up Appium
         run: npm install -g appium

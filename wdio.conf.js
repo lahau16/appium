@@ -115,7 +115,7 @@ exports.config = {
     connectionRetryTimeout: 240000,
     //
     // Default request retries count
-    connectionRetryCount: 6,
+    connectionRetryCount: 3,
     //
     // Test runner services
     // Services take over a specific job you don't want to take care of. They enhance
@@ -182,7 +182,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000,
+        timeout: 120000,
         require: 'ts-node/register',
         compilers: [
             // optional
