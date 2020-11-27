@@ -120,11 +120,7 @@ describe('webdriver.io page', () => {
   it('should have the right title', async () => {
       // Arrange
       await browser.url('https://tiki.vn');
-     let pageTitle = await browser.getTitle()
+      let pageTitle = await browser.getTitle()
       console.log(`Page title is: ${pageTitle}`);
-      // if (pageTitle.toLowerCase().includes('bỉm em bé')) {
-      //     console.log("Test Passed!!!");
-      // } else {
-      //     console.log("Test Failed!!!");
-      // }
   })
+})
