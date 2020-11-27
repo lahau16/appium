@@ -2,11 +2,11 @@
 describe('Index', () => {
   before(async () => {
 ​
-    browser.url('https://hirayama-2008-1.cybozu-dev.com/k/m/5/');
-    const localSettingForDisableWelcomeInfo = 'window.localStorage.setItem("gaia.1::com.cybozu.kintone.mobile.LocalSetting", \'{"v2NavigationPanelButtonTooltipDisplayed":true,"v2WelcomeDialogDisplayed":true}\')';
-    browser.executeScript(localSettingForDisableWelcomeInfo, [])
-    browser.$("div.form-username-slash input[name='username']").setValue("cybozu");
-    browser.$("div.form-password-slash input[name='password']").setValue("cybozu");
+    browser.url('https://qasd-test.cybozu.com/k/25/');
+    // const localSettingForDisableWelcomeInfo = 'window.localStorage.setItem("gaia.1::com.cybozu.kintone.mobile.LocalSetting", \'{"v2NavigationPanelButtonTooltipDisplayed":true,"v2WelcomeDialogDisplayed":true}\')';
+    // browser.executeScript(localSettingForDisableWelcomeInfo, [])
+    browser.$("div.form-username-slash input[name='username']").setValue("admin");
+    browser.$("div.form-password-slash input[name='password']").setValue("qasd@123");
     browser.$("input.login-button").click();
     browser.pause(5000);
   });
@@ -35,7 +35,7 @@ describe('Index', () => {
 ​
 describe('Create', () => {
   before(() => {
-    browser.url('https://hirayama-2008-1.cybozu-dev.com/k/m/5/');
+    browser.url('https://qasd-test.cybozu.com/k/25/');
     $(".gaia-mobile-v2-app-indextoolbar-addrecord-border").click();
     browser.pause(5000);
   });
@@ -63,7 +63,7 @@ describe('Create', () => {
 ​
 describe('Detail', () => {
   before(() => {
-    browser.url('https://hirayama-2008-1.cybozu-dev.com/k/m/5/show?record=4&prev=0&next=0&view=20');
+    browser.url('https://qasd-test.cybozu.com/k/25/show#record=2');
     browser.pause(5000);
   });
 ​
@@ -90,7 +90,7 @@ describe('Detail', () => {
 ​
 describe('Edit', () => {
   before(() => {
-    browser.url('https://hirayama-2008-1.cybozu-dev.com/k/m/5/show?record=4&prev=0&next=0&view=20');
+    browser.url('https://qasd-test.cybozu.com/k/25/show#record=2');
     $('.gaia-mobile-v2-app-record-showtoolbar-editrecord-border').click();
     browser.pause(5000);
   });
