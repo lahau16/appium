@@ -36,13 +36,9 @@ jobs:
         run: |  
           gem install xcode-install
           xcversion simulators --install='iOS 13.7'    
-      - name: Create and Run iOS Emulator - iPhoneX on iOS 13.7, Update default appium config for iOS        
+      - name: Create - iPhone11 on iOS 13.7     
         run: |
            xcrun simctl create TestiPhone11 com.apple.CoreSimulator.SimDeviceType.iPhone-11 com.apple.CoreSimulator.SimRuntime.iOS-13-7 > deviceid.txt 
-           DEVICEUUID=`cat deviceid.txt`          
-           echo $DEVICEUUID          
-           sed -i -e "s/{IPHONE_UUID}/$DEVICEUUID/g" __tests__/e2e/template_appium_configs_ios.js          
-           xcrun simctl boot $DEVICEUUID &   
       - name: Set up Appium
         run: npm install -g appium
 
