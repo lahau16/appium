@@ -39,11 +39,11 @@ jobs:
       - name: Set up Appium
         run: npm install -g appium
 
-      # - name: Set up hombrew
-      #   run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+      - name: Set up hombrew
+        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-      # - name: Set up carthage
-      #   run: brew install carthage
+      - name: Set up carthage
+        run: brew install carthage
 
       - name: Install package
         run: npm install

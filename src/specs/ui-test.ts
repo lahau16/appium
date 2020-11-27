@@ -3,8 +3,8 @@ describe('Index', () => {
   before(async () => {
 ​
     browser.url('https://hirayama-2008-1.cybozu-dev.com/k/m/5/');
-    const localSettingForDisableWelcomeInfo = 'window.localStorage.setItem("gaia.1::com.cybozu.kintone.mobile.LocalSetting", \'{"v2NavigationPanelButtonTooltipDisplayed":true,"v2WelcomeDialogDisplayed":true}\')';
-    browser.executeScript(localSettingForDisableWelcomeInfo, [])
+    // const localSettingForDisableWelcomeInfo = 'window.localStorage.setItem("gaia.1::com.cybozu.kintone.mobile.LocalSetting", \'{"v2NavigationPanelButtonTooltipDisplayed":true,"v2WelcomeDialogDisplayed":true}\')';
+    // browser.executeScript(localSettingForDisableWelcomeInfo, [])
     browser.$("div.form-username-slash input[name='username']").setValue("cybozu");
     browser.$("div.form-password-slash input[name='password']").setValue("cybozu");
     browser.$("input.login-button").click();
