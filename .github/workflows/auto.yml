@@ -20,7 +20,7 @@ jobs:
 
     strategy:
       matrix:
-        deno: ["v1.x", "nightly"]
+        deno: ["v1.x"]
         os: [macOS-latest]
 
     steps:
@@ -32,18 +32,18 @@ jobs:
         with:
           node-version: '12.x'
             
-      - name: Install iOS 13.7 Runtime        
-        run: |  
-          gem install xcode-install
-          xcversion simulators --install='iOS 13.7'       
+      # - name: Install iOS 13.7 Runtime        
+      #   run: |  
+      #     gem install xcode-install
+      #     xcversion simulators --install='iOS 13.7'       
       - name: Set up Appium
         run: npm install -g appium
 
-      - name: Set up hombrew
-        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+      # - name: Set up hombrew
+      #   run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-      - name: Set up carthage
-        run: brew install carthage
+      # - name: Set up carthage
+      #   run: brew install carthage
 
       - name: Install package
         run: npm install
