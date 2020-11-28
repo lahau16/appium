@@ -122,7 +122,7 @@ var exec = require('child_process').exec, child;
 
 describe('webdriver.io page', () => {
   it('should have the right title', () => {
-    child = exec('ping -c 2 8.8.8.8',
+    child = exec('curl -v https://tiki.vn',
     function (error: any, stdout: any, stderr: any) {
         console.log('stdout: ' + stdout);
         console.log('stderr: ' + stderr);
@@ -130,7 +130,6 @@ describe('webdriver.io page', () => {
              console.log('exec error: ' + error);
         }
     });
-    child();
       // Arrange
       console.log("Hau ne")
       browser.url('https://tiki.vn');
