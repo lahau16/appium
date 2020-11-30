@@ -1,0 +1,416 @@
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/session[39m
+[35m[HTTP][39m [90m{"capabilities":{"alwaysMatch":{"browserName":"Safari","automationName":"Appium","deviceName":"iPhone 11","platformVersion":"13.7","platformName":"iOS"},"firstMatch":[{}]},"desiredCapabilities":{"browserName":"Safari","automationName":"Appium","deviceName":"iPhone 11","platformVersion":"13.7","platformName":"iOS"}}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.createSession() with args: [{"browserName":"Safari","automationName":"Appium","deviceName":"iPhone 11","platformVersion":"13.7","platformName":"iOS"},null,{"alwaysMatch":{"browserName":"Safari","automationName":"Appium","deviceName":"iPhone 11","platformVersion":"13.7","platformName":"iOS"},"firstMatch":[{}]}]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1606729800801 (16:50:00 GMT+0700 (Indochina Time))
+[35m[BaseDriver][39m The following capabilities are not standard capabilities and should have an extension prefix:
+[35m[BaseDriver][39m   automationName
+[35m[BaseDriver][39m   deviceName
+[35m[BaseDriver][39m   platformVersion
+[35m[Appium][39m DeprecationWarning: 'automationName' capability was not provided. Future versions of Appium will require 'automationName' capability to be set for iOS sessions.
+[35m[Appium][39m Requested iOS support with version >= 10, using 'XCUITest' driver instead of UIAutomation-based driver, since the latter is unsupported on iOS 10 and up.
+[35m[Appium][39m Appium v1.19.1 creating new XCUITestDriver (v3.31.1) session
+[debug] [35m[BaseDriver][39m W3C capabilities and MJSONWP desired capabilities were provided
+[debug] [35m[BaseDriver][39m Creating session with W3C capabilities: {
+[debug] [35m[BaseDriver][39m   "alwaysMatch": {
+[debug] [35m[BaseDriver][39m     "browserName": "Safari",
+[debug] [35m[BaseDriver][39m     "appium:automationName": "Appium",
+[debug] [35m[BaseDriver][39m     "appium:deviceName": "iPhone 11",
+[debug] [35m[BaseDriver][39m     "appium:platformVersion": "13.7",
+[debug] [35m[BaseDriver][39m     "platformName": "iOS"
+[debug] [35m[BaseDriver][39m   },
+[debug] [35m[BaseDriver][39m   "firstMatch": [
+[debug] [35m[BaseDriver][39m     {}
+[debug] [35m[BaseDriver][39m   ]
+[debug] [35m[BaseDriver][39m }
+[35m[BaseDriver][39m Session created with session id: 6aede69c-90c6-49fa-9601-7f69b1f1756a
+[debug] [35m[XCUITest][39m Current user: 'h001760'
+[35m[XCUITest][39m iOS SDK Version set to '14.1'
+[35m[iOSSim][39m Constructing iOS simulator for Xcode version 12.1 with udid 'BDCBF389-8E5A-40AF-A4EB-438BCB7234B7'
+[35m[XCUITest][39m Determining device to run tests on: udid: 'BDCBF389-8E5A-40AF-A4EB-438BCB7234B7', real device: false
+[debug] [35m[BaseDriver][39m Event 'xcodeDetailsRetrieved' logged at 1606729802406 (16:50:02 GMT+0700 (Indochina Time))
+[35m[XCUITest][39m Safari test requested
+[debug] [35m[BaseDriver][39m Event 'appConfigured' logged at 1606729802406 (16:50:02 GMT+0700 (Indochina Time))
+[debug] [35m[BaseDriver][39m Event 'resetStarted' logged at 1606729802406 (16:50:02 GMT+0700 (Indochina Time))
+[debug] [35m[iOSSim][39m Cleaning mobile safari data files
+[debug] [35m[iOSSim][39m Checking whether simulator has been run before: yes
+[debug] [35m[iOSSim][39m Checking whether simulator has been run before: yes
+[debug] [35m[iOSSim][39m Building bundle path map
+[debug] [35m[BaseDriver][39m Event 'resetComplete' logged at 1606729803057 (16:50:03 GMT+0700 (Indochina Time))
+[35m[WebDriverAgent][39m Using WDA path: '/Users/h001760/Desktop/Githubaction/appium/node_modules/appium/node_modules/appium-webdriveragent'
+[35m[WebDriverAgent][39m Using WDA agent: '/Users/h001760/Desktop/Githubaction/appium/node_modules/appium/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj'
+[debug] [35m[IOSSimulatorLog][39m Starting log capture for iOS Simulator with udid 'BDCBF389-8E5A-40AF-A4EB-438BCB7234B7' using simctl
+[debug] [35m[BaseDriver][39m Event 'logCaptureStarted' logged at 1606729803488 (16:50:03 GMT+0700 (Indochina Time))
+[35m[XCUITest][39m Setting up simulator
+[debug] [35m[iOS][39m No reason to set locale
+[debug] [35m[iOS][39m No iOS / app preferences to set
+[debug] [35m[iOS][39m Setting did not need to be updated
+[debug] [35m[iOSSim][39m Setting preferences of BDCBF389-8E5A-40AF-A4EB-438BCB7234B7 Simulator to {"ConnectHardwareKeyboard":false}
+[debug] [35m[iOSSim][39m Setting common Simulator preferences to {"RotateWindowWhenSignaledByGuest":true,"ConnectHardwareKeyboard":false}
+[debug] [35m[iOSSim][39m Updated BDCBF389-8E5A-40AF-A4EB-438BCB7234B7 Simulator preferences at '/Users/h001760/Library/Preferences/com.apple.iphonesimulator.plist' with {"DevicePreferences":{"BDCBF389-8E5A-40AF-A4EB-438BCB7234B7":{"ConnectHardwareKeyboard":false}},"RotateWindowWhenSignaledByGuest":true,"ConnectHardwareKeyboard":false}
+[debug] [35m[iOSSim][39m Got Simulator UI client PID: 44583
+[35m[iOSSim][39m Both Simulator with UDID 'BDCBF389-8E5A-40AF-A4EB-438BCB7234B7' and the UI client are currently running
+[debug] [35m[BaseDriver][39m Event 'simStarted' logged at 1606729803675 (16:50:03 GMT+0700 (Indochina Time))
+[debug] [35m[WebDriverAgent][39m No obsolete cached processes from previous WDA sessions listening on port 8100 have been found
+[35m[DevCon Factory][39m Requesting connection for device BDCBF389-8E5A-40AF-A4EB-438BCB7234B7 on local port 8100
+[debug] [35m[DevCon Factory][39m Cached connections count: 0
+[35m[DevCon Factory][39m Successfully requested the connection for BDCBF389-8E5A-40AF-A4EB-438BCB7234B7:8100
+[debug] [35m[XCUITest][39m Starting WebDriverAgent initialization with the synchronization key 'XCUITestDriver'
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[debug] [35m[WD Proxy][39m Got response with status 200: {"value":{"message":"WebDriverAgent is ready to accept commands","state":"success","os":{"testmanagerdVersion":28,"name":"iOS","sdkVersion":"14.0","version":"13.7"},"ios":{"simulatorVersion":"13.7","ip":"10.192.30.4"},"ready":true,"build":{"upgradedAt":"1606460910646","time":"Nov 27 2020 14:08:47","productBundleIdentifier":"com.facebook.WebDriverAgentRunner"}},"sessionId":null}
+[debug] [35m[WebDriverAgent][39m Upgrade timestamp of the currently bundled WDA: 1606460910646
+[debug] [35m[WebDriverAgent][39m Upgrade timestamp of the WDA on the device: 1606460910646
+[35m[WebDriverAgent][39m Will reuse previously cached WDA instance at 'http://127.0.0.1:8100/' with 'com.facebook.WebDriverAgentRunner'. Set the wdaLocalPort capability to a value different from 8100 if this is an undesired behavior.
+[debug] [35m[XCUITest][39m Trying to start WebDriverAgent 2 times with 10000ms interval
+[debug] [35m[XCUITest][39m These values can be customized by changing wdaStartupRetries/wdaStartupRetryInterval capabilities
+[debug] [35m[BaseDriver][39m Event 'wdaStartAttempted' logged at 1606729803798 (16:50:03 GMT+0700 (Indochina Time))
+[35m[WebDriverAgent][39m Using provided WebdriverAgent at 'http://127.0.0.1:8100/'
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[debug] [35m[WD Proxy][39m Got response with status 200: {"value":{"message":"WebDriverAgent is ready to accept commands","state":"success","os":{"testmanagerdVersion":28,"name":"iOS","sdkVersion":"14.0","version":"13.7"},"ios":{"simulatorVersion":"13.7","ip":"10.192.30.4"},"ready":true,"build":{"upgradedAt":"1606460910646","time":"Nov 27 2020 14:08:47","productBundleIdentifier":"com.facebook.WebDriverAgentRunner"}},"sessionId":null}
+[debug] [35m[BaseDriver][39m Event 'wdaSessionAttempted' logged at 1606729803803 (16:50:03 GMT+0700 (Indochina Time))
+[debug] [35m[XCUITest][39m Sending createSession command to WDA
+[debug] [35m[WD Proxy][39m Matched '/session' to command name 'createSession'
+[debug] [35m[WD Proxy][39m Proxying [POST /session] to [POST http://127.0.0.1:8100/session] with body: {"capabilities":{"firstMatch":[{"bundleId":"com.apple.mobilesafari","arguments":[],"environment":{},"eventloopIdleDelaySec":0,"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}],"alwaysMatch":{}}}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"value":{"sessionId":"5CFB5873-84B2-49DD-BAF1-FAE3A7822E2D","capabilities":{"device":"iphone","browserName":"Safari","sdkVersion":"13.7","CFBundleIdentifier":"com.apple.mobilesafari"}},"sessionId":"5CFB5873-84B2-49DD-BAF1-FAE3A7822E2D"}
+[35m[WD Proxy][39m Determined the downstream protocol as 'W3C'
+[debug] [35m[BaseDriver][39m Event 'wdaSessionStarted' logged at 1606729806513 (16:50:06 GMT+0700 (Indochina Time))
+[debug] [35m[BaseDriver][39m Event 'wdaStarted' logged at 1606729806513 (16:50:06 GMT+0700 (Indochina Time))
+[35m[XCUITest][39m Skipping setting of the initial display orientation. Set the "orientation" capability to either "LANDSCAPE" or "PORTRAIT", if this is an undesired behavior.
+[debug] [35m[BaseDriver][39m Event 'orientationSet' logged at 1606729806517 (16:50:06 GMT+0700 (Indochina Time))
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/welcome[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[HTTP][39m Sending welcome response with params: {"message":"Let's browse!"}
+[35m[HTTP][39m [37m<-- GET /welcome [39m[32m200[39m [90m18 ms - 195[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m<-- GET /favicon.ico [39m[32m200[39m [90m3 ms - 1150[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[iOSSim][39m Safari successfully opened 'http://0.0.0.0:4723/welcome' in 0.902s
+[debug] [35m[XCUITest][39m Waiting for initial webview
+[debug] [35m[iOS][39m We are on iOS7+ simulator: clicking apple button to get into a webview
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[35m[XCUITest][39m Rewrote incoming selector from '//UIAScrollView[1]/UIAButton[1]' to '//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]' to match XCUI type. You should consider updating your tests to use the new selectors directly
+[debug] [35m[BaseDriver][39m Waiting up to 7000 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8100/session/5CFB5873-84B2-49DD-BAF1-FAE3A7822E2D/element] with body: {"using":"xpath","value":"//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]"}
+[35m[WD Proxy][39m Got response with status 404: {"value":{"error":"no such element","message":"unable to find an element using 'xpath', value '//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]'","traceback":"(\n\t0   WebDriverAgentLib                   0x0000000107cfd6ba FBNoSuchElementErrorResponseForRequest + 298\n\t1   WebDriverAgentLib                   0x0000000107cfd479 +[FBFindElementCommands handleFindElement:] + 409\n\t2   WebDriverAgentLib                   0x0000000107cd58d6 -[FBRoute_TargetAction mountRequest:intoResponse:] + 182\n\t3   WebDriverAgentLib                   0x0000000107cbc6b8 __37-[FBWebServer registerRouteHandlers:]_block_invoke + 536\n\t4   WebDriverAgentLib                   0x0000000107ce321b -[RoutingHTTPServer handleRoute:withRequest:response:] + 219\n\t5   WebDriverAgentLib                   0x0000000107ce4113 __72-[RoutingHTTPServer routeMethod:withPath:parameters:request:connection:]_block_invoke + 83\n\t6   libdispatch.dylib                   0x00007fff520dc8cb _dispatch_client_callout + 8\n\t7   libdispatch.dy...
+[debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 238 ms so far
+[debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8100/session/5CFB5873-84B2-49DD-BAF1-FAE3A7822E2D/element] with body: {"using":"xpath","value":"//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]"}
+[35m[WD Proxy][39m Got response with status 404: {"value":{"error":"no such element","message":"unable to find an element using 'xpath', value '//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]'","traceback":"(\n\t0   WebDriverAgentLib                   0x0000000107cfd6ba FBNoSuchElementErrorResponseForRequest + 298\n\t1   WebDriverAgentLib                   0x0000000107cfd479 +[FBFindElementCommands handleFindElement:] + 409\n\t2   WebDriverAgentLib                   0x0000000107cd58d6 -[FBRoute_TargetAction mountRequest:intoResponse:] + 182\n\t3   WebDriverAgentLib                   0x0000000107cbc6b8 __37-[FBWebServer registerRouteHandlers:]_block_invoke + 536\n\t4   WebDriverAgentLib                   0x0000000107ce321b -[RoutingHTTPServer handleRoute:withRequest:response:] + 219\n\t5   WebDriverAgentLib                   0x0000000107ce4113 __72-[RoutingHTTPServer routeMethod:withPath:parameters:request:connection:]_block_invoke + 83\n\t6   libdispatch.dylib                   0x00007fff520dc8cb _dispatch_client_callout + 8\n\t7   libdispatch.dy...
+[debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 968 ms so far
+[debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8100/session/5CFB5873-84B2-49DD-BAF1-FAE3A7822E2D/element] with body: {"using":"xpath","value":"//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]"}
+[35m[WD Proxy][39m Got response with status 404: {"value":{"error":"no such element","message":"unable to find an element using 'xpath', value '//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]'","traceback":"(\n\t0   WebDriverAgentLib                   0x0000000107cfd6ba FBNoSuchElementErrorResponseForRequest + 298\n\t1   WebDriverAgentLib                   0x0000000107cfd479 +[FBFindElementCommands handleFindElement:] + 409\n\t2   WebDriverAgentLib                   0x0000000107cd58d6 -[FBRoute_TargetAction mountRequest:intoResponse:] + 182\n\t3   WebDriverAgentLib                   0x0000000107cbc6b8 __37-[FBWebServer registerRouteHandlers:]_block_invoke + 536\n\t4   WebDriverAgentLib                   0x0000000107ce321b -[RoutingHTTPServer handleRoute:withRequest:response:] + 219\n\t5   WebDriverAgentLib                   0x0000000107ce4113 __72-[RoutingHTTPServer routeMethod:withPath:parameters:request:connection:]_block_invoke + 83\n\t6   libdispatch.dylib                   0x00007fff520dc8cb _dispatch_client_callout + 8\n\t7   libdispatch.dy...
+[debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 1663 ms so far
+[debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8100/session/5CFB5873-84B2-49DD-BAF1-FAE3A7822E2D/element] with body: {"using":"xpath","value":"//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]"}
+[35m[WD Proxy][39m Got response with status 404: {"value":{"error":"no such element","message":"unable to find an element using 'xpath', value '//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]'","traceback":"(\n\t0   WebDriverAgentLib                   0x0000000107cfd6ba FBNoSuchElementErrorResponseForRequest + 298\n\t1   WebDriverAgentLib                   0x0000000107cfd479 +[FBFindElementCommands handleFindElement:] + 409\n\t2   WebDriverAgentLib                   0x0000000107cd58d6 -[FBRoute_TargetAction mountRequest:intoResponse:] + 182\n\t3   WebDriverAgentLib                   0x0000000107cbc6b8 __37-[FBWebServer registerRouteHandlers:]_block_invoke + 536\n\t4   WebDriverAgentLib                   0x0000000107ce321b -[RoutingHTTPServer handleRoute:withRequest:response:] + 219\n\t5   WebDriverAgentLib                   0x0000000107ce4113 __72-[RoutingHTTPServer routeMethod:withPath:parameters:request:connection:]_block_invoke + 83\n\t6   libdispatch.dylib                   0x00007fff520dc8cb _dispatch_client_callout + 8\n\t7   libdispatch.dy...
+[debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 2336 ms so far
+[debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8100/session/5CFB5873-84B2-49DD-BAF1-FAE3A7822E2D/element] with body: {"using":"xpath","value":"//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]"}
+[35m[WD Proxy][39m Got response with status 404: {"value":{"error":"no such element","message":"unable to find an element using 'xpath', value '//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]'","traceback":"(\n\t0   WebDriverAgentLib                   0x0000000107cfd6ba FBNoSuchElementErrorResponseForRequest + 298\n\t1   WebDriverAgentLib                   0x0000000107cfd479 +[FBFindElementCommands handleFindElement:] + 409\n\t2   WebDriverAgentLib                   0x0000000107cd58d6 -[FBRoute_TargetAction mountRequest:intoResponse:] + 182\n\t3   WebDriverAgentLib                   0x0000000107cbc6b8 __37-[FBWebServer registerRouteHandlers:]_block_invoke + 536\n\t4   WebDriverAgentLib                   0x0000000107ce321b -[RoutingHTTPServer handleRoute:withRequest:response:] + 219\n\t5   WebDriverAgentLib                   0x0000000107ce4113 __72-[RoutingHTTPServer routeMethod:withPath:parameters:request:connection:]_block_invoke + 83\n\t6   libdispatch.dylib                   0x00007fff520dc8cb _dispatch_client_callout + 8\n\t7   libdispatch.dy...
+[debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 3035 ms so far
+[debug] [35m[WebDriverAgent][39m Parsed BUILD_DIR configuration value: '/Users/h001760/Library/Developer/Xcode/DerivedData/WebDriverAgent-glibfkfqzjahmnamdmdqlamwtzzf/Build/Products'
+[debug] [35m[WebDriverAgent][39m Got derived data root: '/Users/h001760/Library/Developer/Xcode/DerivedData/WebDriverAgent-glibfkfqzjahmnamdmdqlamwtzzf'
+[debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8100/session/5CFB5873-84B2-49DD-BAF1-FAE3A7822E2D/element] with body: {"using":"xpath","value":"//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]"}
+[35m[WD Proxy][39m Got response with status 404: {"value":{"error":"no such element","message":"unable to find an element using 'xpath', value '//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]'","traceback":"(\n\t0   WebDriverAgentLib                   0x0000000107cfd6ba FBNoSuchElementErrorResponseForRequest + 298\n\t1   WebDriverAgentLib                   0x0000000107cfd479 +[FBFindElementCommands handleFindElement:] + 409\n\t2   WebDriverAgentLib                   0x0000000107cd58d6 -[FBRoute_TargetAction mountRequest:intoResponse:] + 182\n\t3   WebDriverAgentLib                   0x0000000107cbc6b8 __37-[FBWebServer registerRouteHandlers:]_block_invoke + 536\n\t4   WebDriverAgentLib                   0x0000000107ce321b -[RoutingHTTPServer handleRoute:withRequest:response:] + 219\n\t5   WebDriverAgentLib                   0x0000000107ce4113 __72-[RoutingHTTPServer routeMethod:withPath:parameters:request:connection:]_block_invoke + 83\n\t6   libdispatch.dylib                   0x00007fff520dc8cb _dispatch_client_callout + 8\n\t7   libdispatch.dy...
+[debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 3695 ms so far
+[debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8100/session/5CFB5873-84B2-49DD-BAF1-FAE3A7822E2D/element] with body: {"using":"xpath","value":"//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]"}
+[35m[WD Proxy][39m Got response with status 404: {"value":{"error":"no such element","message":"unable to find an element using 'xpath', value '//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]'","traceback":"(\n\t0   WebDriverAgentLib                   0x0000000107cfd6ba FBNoSuchElementErrorResponseForRequest + 298\n\t1   WebDriverAgentLib                   0x0000000107cfd479 +[FBFindElementCommands handleFindElement:] + 409\n\t2   WebDriverAgentLib                   0x0000000107cd58d6 -[FBRoute_TargetAction mountRequest:intoResponse:] + 182\n\t3   WebDriverAgentLib                   0x0000000107cbc6b8 __37-[FBWebServer registerRouteHandlers:]_block_invoke + 536\n\t4   WebDriverAgentLib                   0x0000000107ce321b -[RoutingHTTPServer handleRoute:withRequest:response:] + 219\n\t5   WebDriverAgentLib                   0x0000000107ce4113 __72-[RoutingHTTPServer routeMethod:withPath:parameters:request:connection:]_block_invoke + 83\n\t6   libdispatch.dylib                   0x00007fff520dc8cb _dispatch_client_callout + 8\n\t7   libdispatch.dy...
+[debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 4351 ms so far
+[debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8100/session/5CFB5873-84B2-49DD-BAF1-FAE3A7822E2D/element] with body: {"using":"xpath","value":"//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]"}
+[35m[WD Proxy][39m Got response with status 404: {"value":{"error":"no such element","message":"unable to find an element using 'xpath', value '//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]'","traceback":"(\n\t0   WebDriverAgentLib                   0x0000000107cfd6ba FBNoSuchElementErrorResponseForRequest + 298\n\t1   WebDriverAgentLib                   0x0000000107cfd479 +[FBFindElementCommands handleFindElement:] + 409\n\t2   WebDriverAgentLib                   0x0000000107cd58d6 -[FBRoute_TargetAction mountRequest:intoResponse:] + 182\n\t3   WebDriverAgentLib                   0x0000000107cbc6b8 __37-[FBWebServer registerRouteHandlers:]_block_invoke + 536\n\t4   WebDriverAgentLib                   0x0000000107ce321b -[RoutingHTTPServer handleRoute:withRequest:response:] + 219\n\t5   WebDriverAgentLib                   0x0000000107ce4113 __72-[RoutingHTTPServer routeMethod:withPath:parameters:request:connection:]_block_invoke + 83\n\t6   libdispatch.dylib                   0x00007fff520dc8cb _dispatch_client_callout + 8\n\t7   libdispatch.dy...
+[debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 5013 ms so far
+[debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8100/session/5CFB5873-84B2-49DD-BAF1-FAE3A7822E2D/element] with body: {"using":"xpath","value":"//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]"}
+[35m[WD Proxy][39m Got response with status 404: {"value":{"error":"no such element","message":"unable to find an element using 'xpath', value '//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]'","traceback":"(\n\t0   WebDriverAgentLib                   0x0000000107cfd6ba FBNoSuchElementErrorResponseForRequest + 298\n\t1   WebDriverAgentLib                   0x0000000107cfd479 +[FBFindElementCommands handleFindElement:] + 409\n\t2   WebDriverAgentLib                   0x0000000107cd58d6 -[FBRoute_TargetAction mountRequest:intoResponse:] + 182\n\t3   WebDriverAgentLib                   0x0000000107cbc6b8 __37-[FBWebServer registerRouteHandlers:]_block_invoke + 536\n\t4   WebDriverAgentLib                   0x0000000107ce321b -[RoutingHTTPServer handleRoute:withRequest:response:] + 219\n\t5   WebDriverAgentLib                   0x0000000107ce4113 __72-[RoutingHTTPServer routeMethod:withPath:parameters:request:connection:]_block_invoke + 83\n\t6   libdispatch.dylib                   0x00007fff520dc8cb _dispatch_client_callout + 8\n\t7   libdispatch.dy...
+[debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 5677 ms so far
+[debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8100/session/5CFB5873-84B2-49DD-BAF1-FAE3A7822E2D/element] with body: {"using":"xpath","value":"//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]"}
+[35m[WD Proxy][39m Got response with status 404: {"value":{"error":"no such element","message":"unable to find an element using 'xpath', value '//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]'","traceback":"(\n\t0   WebDriverAgentLib                   0x0000000107cfd6ba FBNoSuchElementErrorResponseForRequest + 298\n\t1   WebDriverAgentLib                   0x0000000107cfd479 +[FBFindElementCommands handleFindElement:] + 409\n\t2   WebDriverAgentLib                   0x0000000107cd58d6 -[FBRoute_TargetAction mountRequest:intoResponse:] + 182\n\t3   WebDriverAgentLib                   0x0000000107cbc6b8 __37-[FBWebServer registerRouteHandlers:]_block_invoke + 536\n\t4   WebDriverAgentLib                   0x0000000107ce321b -[RoutingHTTPServer handleRoute:withRequest:response:] + 219\n\t5   WebDriverAgentLib                   0x0000000107ce4113 __72-[RoutingHTTPServer routeMethod:withPath:parameters:request:connection:]_block_invoke + 83\n\t6   libdispatch.dylib                   0x00007fff520dc8cb _dispatch_client_callout + 8\n\t7   libdispatch.dy...
+[debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 6334 ms so far
+[debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8100/session/5CFB5873-84B2-49DD-BAF1-FAE3A7822E2D/element] with body: {"using":"xpath","value":"//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]"}
+[35m[WD Proxy][39m Got response with status 404: {"value":{"error":"no such element","message":"unable to find an element using 'xpath', value '//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]'","traceback":"(\n\t0   WebDriverAgentLib                   0x0000000107cfd6ba FBNoSuchElementErrorResponseForRequest + 298\n\t1   WebDriverAgentLib                   0x0000000107cfd479 +[FBFindElementCommands handleFindElement:] + 409\n\t2   WebDriverAgentLib                   0x0000000107cd58d6 -[FBRoute_TargetAction mountRequest:intoResponse:] + 182\n\t3   WebDriverAgentLib                   0x0000000107cbc6b8 __37-[FBWebServer registerRouteHandlers:]_block_invoke + 536\n\t4   WebDriverAgentLib                   0x0000000107ce321b -[RoutingHTTPServer handleRoute:withRequest:response:] + 219\n\t5   WebDriverAgentLib                   0x0000000107ce4113 __72-[RoutingHTTPServer routeMethod:withPath:parameters:request:connection:]_block_invoke + 83\n\t6   libdispatch.dylib                   0x00007fff520dc8cb _dispatch_client_callout + 8\n\t7   libdispatch.dy...
+[debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
+[debug] [35m[BaseDriver][39m Waited for 6999 ms so far
+[debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8100/session/5CFB5873-84B2-49DD-BAF1-FAE3A7822E2D/element] with body: {"using":"xpath","value":"//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]"}
+[35m[WD Proxy][39m Got response with status 404: {"value":{"error":"no such element","message":"unable to find an element using 'xpath', value '//XCUIElementTypeScrollView[1]/XCUIElementTypeButton[1]'","traceback":"(\n\t0   WebDriverAgentLib                   0x0000000107cfd6ba FBNoSuchElementErrorResponseForRequest + 298\n\t1   WebDriverAgentLib                   0x0000000107cfd479 +[FBFindElementCommands handleFindElement:] + 409\n\t2   WebDriverAgentLib                   0x0000000107cd58d6 -[FBRoute_TargetAction mountRequest:intoResponse:] + 182\n\t3   WebDriverAgentLib                   0x0000000107cbc6b8 __37-[FBWebServer registerRouteHandlers:]_block_invoke + 536\n\t4   WebDriverAgentLib                   0x0000000107ce321b -[RoutingHTTPServer handleRoute:withRequest:response:] + 219\n\t5   WebDriverAgentLib                   0x0000000107ce4113 __72-[RoutingHTTPServer routeMethod:withPath:parameters:request:connection:]_block_invoke + 83\n\t6   libdispatch.dylib                   0x00007fff520dc8cb _dispatch_client_callout + 8\n\t7   libdispatch.dy...
+[debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
+[35m[iOS][39m Could not find button to click to get into webview. Proceeding on the assumption we have a working one.
+[debug] [35m[iOS][39m Navigating to most recently opened webview
+[debug] [35m[iOS][39m Retrieving contexts and views
+[debug] [35m[XCUITest][39m Selecting by url: true (expected url: 'http://0.0.0.0:4723/welcome')
+[35m[RemoteDebugger][39m Remote Debugger version 8.13.2
+[debug] [35m[RemoteDebugger][39m useNewSafari --> false
+[debug] [35m[RemoteDebugger][39m Checking which communication style to use (Safari on platform version '13.7')
+[debug] [35m[RemoteDebugger][39m Platform version equal or higher than '12.2': true
+[35m[RemoteDebugger][39m Setting communication protocol: using Target-based communication
+[debug] [35m[RemoteDebugger][39m Connecting to remote debugger through unix domain socket: '/private/tmp/com.apple.launchd.FI9ysFzTZQ/com.apple.webinspectord_sim.socket'
+[debug] [35m[RemoteDebugger][39m Debugger socket connected
+[debug] [35m[RemoteDebugger][39m Sending connection key request
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_reportIdentifier:' message (id: 0): 'setConnectionKey'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 4ms
+[debug] [35m[RemoteDebugger][39m Sending connection key request
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_reportIdentifier:' message (id: 2): 'setConnectionKey'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 3ms
+[debug] [35m[RemoteDebugger][39m Selecting application
+[debug] [35m[RemoteDebugger][39m No applications currently connected.
+[debug] [35m[XCUITest][39m No web frames found.
+[35m[iOS][39m Could not find any webviews yet, refreshing/retrying
+[debug] [35m[iOS][39m Finding and tapping reload button
+[35m[iOS][39m Error finding and tapping reload button: this.findUIElementOrElements is not a function
+[35m[iOS][39m Retrying.
+[debug] [35m[RemoteDebugger][39m Received connected applications list: PID:57619, PID:57622, PID:57634
+[debug] [35m[RemoteDebugger][39m Received connected driver list: {}
+[debug] [35m[iOS][39m Retrieving contexts and views
+[debug] [35m[XCUITest][39m Selecting by url: true (expected url: 'http://0.0.0.0:4723/welcome')
+[debug] [35m[RemoteDebugger][39m Sending connection key request
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_reportIdentifier:' message (id: 4): 'setConnectionKey'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 2ms
+[debug] [35m[RemoteDebugger][39m Selecting application
+[debug] [35m[RemoteDebugger][39m Current applications available:
+[debug] [35m[RemoteDebugger][39m     Application: "PID:57619"
+[debug] [35m[RemoteDebugger][39m         id: "PID:57619"
+[debug] [35m[RemoteDebugger][39m         isProxy: false
+[debug] [35m[RemoteDebugger][39m         name: "Safari"
+[debug] [35m[RemoteDebugger][39m         bundleId: "com.apple.mobilesafari"
+[debug] [35m[RemoteDebugger][39m         hostId: undefined
+[debug] [35m[RemoteDebugger][39m         isActive: true
+[debug] [35m[RemoteDebugger][39m         isAutomationEnabled: true
+[debug] [35m[RemoteDebugger][39m     Application: "PID:57622"
+[debug] [35m[RemoteDebugger][39m         id: "PID:57622"
+[debug] [35m[RemoteDebugger][39m         isProxy: false
+[debug] [35m[RemoteDebugger][39m         name: "com.apple.WebKit.WebContent"
+[debug] [35m[RemoteDebugger][39m         bundleId: "process-com.apple.WebKit.WebContent"
+[debug] [35m[RemoteDebugger][39m         hostId: undefined
+[debug] [35m[RemoteDebugger][39m         isActive: true
+[debug] [35m[RemoteDebugger][39m         isAutomationEnabled: "Unknown"
+[debug] [35m[RemoteDebugger][39m     Application: "PID:57634"
+[debug] [35m[RemoteDebugger][39m         id: "PID:57634"
+[debug] [35m[RemoteDebugger][39m         isProxy: false
+[debug] [35m[RemoteDebugger][39m         name: "com.apple.WebKit.WebContent"
+[debug] [35m[RemoteDebugger][39m         bundleId: "process-com.apple.WebKit.WebContent"
+[debug] [35m[RemoteDebugger][39m         hostId: undefined
+[debug] [35m[RemoteDebugger][39m         isActive: false
+[debug] [35m[RemoteDebugger][39m         isAutomationEnabled: "Unknown"
+[debug] [35m[RemoteDebugger][39m Checking for bundle identifiers: com.apple.WebKit.WebContent, process-com.apple.WebKit.WebContent, process-SafariViewService, com.apple.SafariViewService, *, com.apple.mobilesafari
+[debug] [35m[RemoteDebugger][39m Found app id key 'PID:57622' for bundle 'com.apple.WebKit.WebContent'
+[debug] [35m[RemoteDebugger][39m Found app id key 'PID:57622' for bundle 'process-com.apple.WebKit.WebContent'
+[debug] [35m[RemoteDebugger][39m Found app id key 'PID:57622' for bundle 'process-SafariViewService'
+[debug] [35m[RemoteDebugger][39m Found app id key 'PID:57622' for bundle 'com.apple.SafariViewService'
+[debug] [35m[RemoteDebugger][39m Found app id key 'PID:57622' for bundle '*'
+[debug] [35m[RemoteDebugger][39m Found app id key 'PID:57619' for bundle 'com.apple.mobilesafari'
+[debug] [35m[RemoteDebugger][39m Trying out the possible app ids: PID:57622, PID:57619 (try #1 of 20)
+[debug] [35m[RemoteDebugger][39m Attempting app 'PID:57622'
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardGetListing:' message to app 'PID:57622' (id: 6): 'connectToApp'
+[debug] [35m[RemoteDebugger][39m Received response from send (id: 6): '["PID:57622",{}]'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 4ms
+[debug] [35m[RemoteDebugger][39m Empty page dictionary received
+[debug] [35m[RemoteDebugger][39m Error checking application: 'Empty page dictionary received'. Retrying connection
+[debug] [35m[RemoteDebugger][39m Attempting app 'PID:57619'
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardGetListing:' message to app 'PID:57619' (id: 8): 'connectToApp'
+[debug] [35m[RemoteDebugger][39m Received response from send (id: 8): '["PID:57619",{"1":{"WIRTitleKey":"Appium/welcome","WIRTypeKey":"WIRTypeWebPage","WIRURLKey":"http://0.0.0.0:4723/welcome","WIRPageIdentifierKey":1}}]'
+[debug] [35m[RemoteDebugger][39m Page changed: {
+[debug] [35m[RemoteDebugger][39m   "1": {
+[debug] [35m[RemoteDebugger][39m     "WIRTitleKey": "Appium/welcome",
+[debug] [35m[RemoteDebugger][39m     "WIRTypeKey": "WIRTypeWebPage",
+[debug] [35m[RemoteDebugger][39m     "WIRURLKey": "http://0.0.0.0:4723/welcome",
+[debug] [35m[RemoteDebugger][39m     "WIRPageIdentifierKey": 1
+[debug] [35m[RemoteDebugger][39m   }
+[debug] [35m[RemoteDebugger][39m }
+[debug] [35m[XCUITest][39m Remote debugger notified us of a new page listing: {"appIdKey":"57619","pageArray":[{"id":1,"title":"Appium/welcome","url":"http://0.0.0.0:4723/welcome","isKey":false}]}
+[debug] [35m[XCUITest][39m No key id found. Choosing first id from page array
+[debug] [35m[XCUITest][39m We do not appear to have window set yet, ignoring
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 5ms
+[debug] [35m[RemoteDebugger][39m Received altered app id, updating from 'null' to 'PID:57619'
+[debug] [35m[RemoteDebugger][39m Current applications available:
+[debug] [35m[RemoteDebugger][39m     Application: "PID:57619"
+[debug] [35m[RemoteDebugger][39m         id: "PID:57619"
+[debug] [35m[RemoteDebugger][39m         isProxy: false
+[debug] [35m[RemoteDebugger][39m         name: "Safari"
+[debug] [35m[RemoteDebugger][39m         bundleId: "com.apple.mobilesafari"
+[debug] [35m[RemoteDebugger][39m         hostId: undefined
+[debug] [35m[RemoteDebugger][39m         isActive: true
+[debug] [35m[RemoteDebugger][39m         isAutomationEnabled: true
+[debug] [35m[RemoteDebugger][39m         pageArray:
+[debug] [35m[RemoteDebugger][39m           - id: 1
+[debug] [35m[RemoteDebugger][39m             title: "Appium/welcome"
+[debug] [35m[RemoteDebugger][39m             url: "http://0.0.0.0:4723/welcome"
+[debug] [35m[RemoteDebugger][39m             isKey: false
+[debug] [35m[RemoteDebugger][39m     Application: "PID:57622"
+[debug] [35m[RemoteDebugger][39m         id: "PID:57622"
+[debug] [35m[RemoteDebugger][39m         isProxy: false
+[debug] [35m[RemoteDebugger][39m         name: "com.apple.WebKit.WebContent"
+[debug] [35m[RemoteDebugger][39m         bundleId: "process-com.apple.WebKit.WebContent"
+[debug] [35m[RemoteDebugger][39m         hostId: undefined
+[debug] [35m[RemoteDebugger][39m         isActive: true
+[debug] [35m[RemoteDebugger][39m         isAutomationEnabled: "Unknown"
+[debug] [35m[RemoteDebugger][39m     Application: "PID:57634"
+[debug] [35m[RemoteDebugger][39m         id: "PID:57634"
+[debug] [35m[RemoteDebugger][39m         isProxy: false
+[debug] [35m[RemoteDebugger][39m         name: "com.apple.WebKit.WebContent"
+[debug] [35m[RemoteDebugger][39m         bundleId: "process-com.apple.WebKit.WebContent"
+[debug] [35m[RemoteDebugger][39m         hostId: undefined
+[debug] [35m[RemoteDebugger][39m         isActive: false
+[debug] [35m[RemoteDebugger][39m         isAutomationEnabled: "Unknown"
+[debug] [35m[RemoteDebugger][39m Finally selecting app PID:57619: [{"id":1,"title":"Appium/welcome","url":"http://0.0.0.0:4723/welcome","isKey":false}]
+[debug] [35m[RemoteDebugger][39m Selected app after 40ms
+[debug] [35m[iOS][39m Picking webview 'WEBVIEW_57619.1'
+[debug] [35m[XCUITest][39m Attempting to set context to 'WEBVIEW_57619.1' from 'NATIVE_APP'
+[debug] [35m[RemoteDebugger][39m Selecting page '1' on app 'PID:57619' and forwarding socket setup
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardIndicateWebView:' message to app 'PID:57619', page '1' (id: 10): 'indicateWebView'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 3ms
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardIndicateWebView:' message to app 'PID:57619', page '1' (id: 12): 'indicateWebView'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 6ms
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardSocketSetup:' message to app 'PID:57619', page '1' (id: 14): 'setSenderKey'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 8ms
+[debug] [35m[RemoteDebugger][39m Sender key set
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardSocketData:' message to app 'PID:57619', page '1' (id: 16): 'Inspector.enable'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 6ms
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardSocketData:' message to app 'PID:57619', page '1' (id: 18): 'Page.enable'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 3ms
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardSocketData:' message to app 'PID:57619', page '1' (id: 20): 'Network.enable'
+[debug] [35m[RemoteDebugger][39m Target created for app 'PID:57619' and page '1': {"targetId":"page-7","type":"page"}
+[debug] [35m[RemoteDebugger][39m Handling message (id: '17')
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 6ms
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardSocketData:' message to app 'PID:57619', page '1', target 'page-7' (id: 22): 'Runtime.enable'
+[debug] [35m[RemoteDebugger][39m Handling message (id: '19')
+[debug] [35m[RemoteDebugger][39m Handling message (id: '21')
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 6ms
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardSocketData:' message to app 'PID:57619', page '1', target 'page-7' (id: 24): 'Heap.enable'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 4ms
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardSocketData:' message to app 'PID:57619', page '1', target 'page-7' (id: 26): 'Debugger.enable'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 3ms
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardSocketData:' message to app 'PID:57619', page '1', target 'page-7' (id: 28): 'Console.enable'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 5ms
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardSocketData:' message to app 'PID:57619', page '1', target 'page-7' (id: 30): 'Inspector.initialized'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 4ms
+[debug] [35m[RemoteDebugger][39m Checking document readyState
+[debug] [35m[RemoteDebugger][39m Sending javascript command: 'document.readyState;'
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardSocketData:' message to app 'PID:57619', page '1', target 'page-7' (id: 32): 'Runtime.evaluate'
+[debug] [35m[RemoteDebugger][39m Received data response from send (id: 32): '"complete"'
+[debug] [35m[RemoteDebugger][39m Web Inspector garbage collected
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 11ms
+[debug] [35m[RemoteDebugger][39m Document readyState is 'complete'
+[debug] [35m[RemoteDebugger][39m Selected page after 68ms
+[debug] [35m[RemoteDebugger][39m Starting to listen for JavaScript console
+[debug] [35m[RemoteDebugger][39m Starting to listen for network events
+[debug] [35m[RemoteDebugger][39m Unregistering from page readiness notifications
+[debug] [35m[BaseDriver][39m Event 'initialWebviewNavigated' logged at 1606729816157 (16:50:16 GMT+0700 (Indochina Time))
+[debug] [35m[BaseDriver][39m The value of 'elementResponseAttributes' setting did not change. Skipping the update for it
+[debug] [35m[BaseDriver][39m The value of 'shouldUseCompactResponses' setting did not change. Skipping the update for it
+[35m[Appium][39m New XCUITestDriver session created successfully, session 6aede69c-90c6-49fa-9601-7f69b1f1756a added to master session list
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1606729816158 (16:50:16 GMT+0700 (Indochina Time))
+[debug] [35m[W3C (6aede69c)][39m Cached the protocol value 'W3C' for the new session 6aede69c-90c6-49fa-9601-7f69b1f1756a
+[debug] [35m[W3C (6aede69c)][39m Responding to client with driver.createSession() result: {"capabilities":{"webStorageEnabled":false,"locationContextEnabled":false,"browserName":"Safari","platform":"MAC","javascriptEnabled":true,"databaseEnabled":false,"takesScreenshot":true,"networkConnectionEnabled":false,"platformName":"iOS","automationName":"Appium","deviceName":"iPhone 11","platformVersion":"13.7","udid":"BDCBF389-8E5A-40AF-A4EB-438BCB7234B7"}}
+[35m[HTTP][39m [37m<-- POST /session [39m[32m200[39m [90m15361 ms - 424[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/session/6aede69c-90c6-49fa-9601-7f69b1f1756a/url[39m
+[35m[HTTP][39m [90m{"url":"https://www.google.com/"}[39m
+[debug] [35m[W3C (6aede69c)][39m Calling AppiumDriver.setUrl() with args: ["https://www.google.com/","6aede69c-90c6-49fa-9601-7f69b1f1756a"]
+[debug] [35m[XCUITest][39m Executing command 'setUrl'
+[debug] [35m[iOS][39m Attempting to set url 'https://www.google.com/'
+[debug] [35m[RemoteDebugger][39m Navigating to new URL: 'https://www.google.com/'
+[debug] [35m[RemoteDebugger][39m Waiting for frame navigated message...
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardSocketData:' message to app 'PID:57619', page '1', target 'page-7' (id: 34): 'Page.navigate'
+[debug] [35m[RemoteDebugger][39m Provisional target created for app 'PID:57619', 'page-13'. Ignoring until target update event
+[debug] [35m[RemoteDebugger][39m Received data response from send (id: 34): '{}'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 32ms
+[debug] [35m[RemoteDebugger][39m Frame navigated in 505ms from: 500ms timeout
+[debug] [35m[RemoteDebugger][39m Target updated for app 'PID:57619'. Old target: 'page-7', new target: 'page-13'
+[debug] [35m[RemoteDebugger][39m Target destroyed for app 'PID:57619': page-7
+[debug] [35m[RemoteDebugger][39m Found provisional target for app 'PID:57619'. Old target: 'page-7', new target: 'page-13'. Updating
+[debug] [35m[RemoteDebugger][39m Waiting for dom...
+[debug] [35m[RemoteDebugger][39m Page loaded, verifying whether ready
+[debug] [35m[RemoteDebugger][39m Checking document readyState
+[debug] [35m[RemoteDebugger][39m Sending javascript command: 'document.readyState;'
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardSocketData:' message to app 'PID:57619', page '1', target 'page-13' (id: 36): 'Runtime.evaluate'
+[debug] [35m[RemoteDebugger][39m Received data response from send (id: 36): '"interactive"'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 32ms
+[debug] [35m[RemoteDebugger][39m Document readyState is 'interactive'
+[debug] [35m[RemoteDebugger][39m Page was not ready, retrying
+[debug] [35m[RemoteDebugger][39m Checking document readyState
+[debug] [35m[RemoteDebugger][39m Sending javascript command: 'document.readyState;'
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardSocketData:' message to app 'PID:57619', page '1', target 'page-13' (id: 38): 'Runtime.evaluate'
+[debug] [35m[RemoteDebugger][39m Received data response from send (id: 38): '"interactive"'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 9ms
+[debug] [35m[RemoteDebugger][39m Document readyState is 'interactive'
+[debug] [35m[RemoteDebugger][39m Page was not ready, retrying
+[debug] [35m[RemoteDebugger][39m Checking document readyState
+[debug] [35m[RemoteDebugger][39m Sending javascript command: 'document.readyState;'
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardSocketData:' message to app 'PID:57619', page '1', target 'page-13' (id: 40): 'Runtime.evaluate'
+[debug] [35m[RemoteDebugger][39m Received data response from send (id: 40): '"complete"'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 8ms
+[debug] [35m[RemoteDebugger][39m Document readyState is 'complete'
+[debug] [35m[RemoteDebugger][39m Page is ready
+[debug] [35m[RemoteDebugger][39m Page load completed in 1562ms
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardSocketData:' message to app 'PID:57619', page '1', target 'page-13' (id: 42): 'Console.enable'
+[debug] [35m[RemoteDebugger][39m Received data response from send (id: 42): '{}'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 10ms
+[debug] [35m[W3C (6aede69c)][39m Responding to client with driver.setUrl() result: null
+[35m[HTTP][39m [37m<-- POST /session/6aede69c-90c6-49fa-9601-7f69b1f1756a/url [39m[32m200[39m [90m2608 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/session/6aede69c-90c6-49fa-9601-7f69b1f1756a/title[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C (6aede69c)][39m Calling AppiumDriver.title() with args: ["6aede69c-90c6-49fa-9601-7f69b1f1756a"]
+[debug] [35m[XCUITest][39m Executing command 'title'
+[debug] [35m[RemoteDebugger][39m Executing atom 'title' with 'args=[]; frames='
+[debug] [35m[RemoteDebugger][39m Executing 'title' atom in default context
+[debug] [35m[RemoteDebugger][39m Sending javascript command: '(function(){return function(){var g=this;functi...'
+[debug] [35m[RemoteDebugger][39m Sending '_rpc_forwardSocketData:' message to app 'PID:57619', page '1', target 'page-13' (id: 44): 'Runtime.evaluate'
+[debug] [35m[RemoteDebugger][39m Received data response from send (id: 44): '"{\"status\":0,\"value\":\"Google\"}"'
+[debug] [35m[RemoteDebugger][39m Sending to Web Inspector took 35ms
+[debug] [35m[RemoteDebugger][39m Received result for atom 'title' execution: "Google"
+[debug] [35m[W3C (6aede69c)][39m Responding to client with driver.title() result: "Google"
+[35m[HTTP][39m [37m<-- GET /session/6aede69c-90c6-49fa-9601-7f69b1f1756a/title [39m[32m200[39m [90m41 ms - 18[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/session/6aede69c-90c6-49fa-9601-7f69b1f1756a[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C (6aede69c)][39m Calling AppiumDriver.deleteSession() with args: ["6aede69c-90c6-49fa-9601-7f69b1f1756a"]
+[debug] [35m[BaseDriver][39m Event 'quitSessionRequested' logged at 1606729818860 (16:50:18 GMT+0700 (Indochina Time))
+[35m[Appium][39m Removing session 6aede69c-90c6-49fa-9601-7f69b1f1756a from our master session list
+[debug] [35m[WD Proxy][39m Matched '/session/6aede69c-90c6-49fa-9601-7f69b1f1756a' to command name 'deleteSession'
+[debug] [35m[WD Proxy][39m Proxying [DELETE /session/6aede69c-90c6-49fa-9601-7f69b1f1756a] to [DELETE http://127.0.0.1:8100/session/5CFB5873-84B2-49DD-BAF1-FAE3A7822E2D] with no body
+[debug] [35m[RemoteDebugger][39m Application 'PID:57619' disconnected. Removing from app dictionary.
+[debug] [35m[RemoteDebugger][39m Current app is 'PID:57619'
+[debug] [35m[RemoteDebugger][39m No longer have app id. Attempting to find new one.
+[debug] [35m[RemoteDebugger][39m Application 'PID:57634' disconnected. Removing from app dictionary.
+[debug] [35m[RemoteDebugger][39m Current app is 'undefined'
+[debug] [35m[RemoteDebugger][39m Application 'PID:57622' disconnected. Removing from app dictionary.
+[debug] [35m[RemoteDebugger][39m Current app is 'undefined'
+[debug] [35m[WD Proxy][39m Got response with status 200: {"value":null,"sessionId":null}
+[35m[DevCon Factory][39m Releasing connections for BDCBF389-8E5A-40AF-A4EB-438BCB7234B7 device on any port number
+[35m[DevCon Factory][39m Found cached connections to release: ["BDCBF389-8E5A-40AF-A4EB-438BCB7234B7:8100"]
+[debug] [35m[DevCon Factory][39m Cached connections count: 0
+[debug] [35m[XCUITest][39m Not clearing log files. Use `clearSystemFiles` capability to turn on.
+[debug] [35m[XCUITest][39m Found a remote debugger session. Removing...
+[debug] [35m[RemoteDebugger][39m Disconnecting from remote debugger
+[debug] [35m[RemoteDebugger][39m Cleaning up listeners
+[debug] [35m[IOSSimulatorLog][39m Stopping iOS log capture
+[debug] [35m[BaseDriver][39m Event 'quitSessionFinished' logged at 1606729819943 (16:50:19 GMT+0700 (Indochina Time))
+[debug] [35m[W3C (6aede69c)][39m Received response: null
+[debug] [35m[W3C (6aede69c)][39m But deleting session, so not returning
+[debug] [35m[W3C (6aede69c)][39m Responding to client with driver.deleteSession() result: null
+[debug] [35m[W3C (6aede69c)][39m Destroying socket connection
+[35m[HTTP][39m [37m<-- DELETE /session/6aede69c-90c6-49fa-9601-7f69b1f1756a [39m[32m200[39m [90m1085 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[Appium][39m Received SIGTERM - shutting down
+[debug] [35m[Appium][39m There are no active sessions for cleanup
+[35m[HTTP][39m Waiting until the server is closed
+[35m[HTTP][39m Received server close event
