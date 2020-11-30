@@ -1,41 +1,41 @@
 var exec = require('child_process').exec, child;
 
 
-// // import { expect } from 'chai';
-// describe('Index', () => {
-//   before(async () => {
-// ​
-//     browser.url('https://qasd-test.cybozu.com/k/m/25/');
-//     // const localSettingForDisableWelcomeInfo = 'window.localStorage.setItem("gaia.1::com.cybozu.kintone.mobile.LocalSetting", \'{"v2NavigationPanelButtonTooltipDisplayed":true,"v2WelcomeDialogDisplayed":true}\')';
-//     // browser.executeScript(localSettingForDisableWelcomeInfo, [])
-//     browser.$("div.form-username-slash input[name='username']").setValue("admin");
-//     browser.$("div.form-password-slash input[name='password']").setValue("qasd@123");
-//     browser.$("input.login-button").click();
-//     browser.pause(5000);
-//   });
-// ​
-//   it('should save some screenshots', () => {
-// ​
-//     // Save a full page screenshot
-//     browser.saveFullPageScreen('index-fullPage', { /* some options */});
-//     browser.pause(5000);
-//     // Save a full page screenshot with all tab executions
-//     browser.saveTabbablePage('index-tabbable', { /* some options, use the same options as for saveFullPageScreen */});
-//     browser.pause(5000);
-//   });
-// ​
-//   it('should compare successful with a baseline', () => {
-// ​
-//     // Check a full page screenshot
-//     expect(browser.checkFullPageScreen('index-fullPage', { /* some options */})).toEqual(0);
-//     browser.pause(5000);
-//     // Check a full page screenshot with all tab executions
-//     expect(browser.checkTabbablePage('index-tabbable', { /* some options, use the same options as for checkFullPageScreen */})).toEqual(0);
-//     browser.pause(5000);
-//   });
-// });
-// ​
-// ​
+// import { expect } from 'chai';
+describe('Index', () => {
+  before(async () => {
+​
+    browser.url('https://qasd-test.cybozu.com/k/m/25/');
+    const localSettingForDisableWelcomeInfo = 'window.localStorage.setItem("gaia.1::com.cybozu.kintone.mobile.LocalSetting", \'{"v2NavigationPanelButtonTooltipDisplayed":true,"v2WelcomeDialogDisplayed":true}\')';
+    browser.executeScript(localSettingForDisableWelcomeInfo, [])
+    browser.$("div.form-username-slash input[name='username']").setValue("admin");
+    browser.$("div.form-password-slash input[name='password']").setValue("qasd@123");
+    browser.$("input.login-button").click();
+    browser.pause(5000);
+  });
+​
+  it('should save some screenshots', () => {
+​
+    // Save a full page screenshot
+    browser.saveFullPageScreen('index-fullPage', { /* some options */});
+    browser.pause(5000);
+    // Save a full page screenshot with all tab executions
+    browser.saveTabbablePage('index-tabbable', { /* some options, use the same options as for saveFullPageScreen */});
+    browser.pause(5000);
+  });
+​
+  it('should compare successful with a baseline', () => {
+​
+    // Check a full page screenshot
+    expect(browser.checkFullPageScreen('index-fullPage', { /* some options */})).toEqual(0);
+    browser.pause(5000);
+    // Check a full page screenshot with all tab executions
+    expect(browser.checkTabbablePage('index-tabbable', { /* some options, use the same options as for checkFullPageScreen */})).toEqual(0);
+    browser.pause(5000);
+  });
+});
+​
+​
 // describe('Create', () => {
 //   before(() => {
 //     browser.url('https://qasd-test.cybozu.com/k/m/25/');
@@ -120,7 +120,7 @@ var exec = require('child_process').exec, child;
 // });
 
 
-describe('webdriver.io page', () => {
+describe.skip('webdriver.io page', () => {
   it('should have the right title', () => {
     // child = exec('curl -v https://tiki.vn',
     // function (error: any, stdout: any, stderr: any) {
