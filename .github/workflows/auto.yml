@@ -57,11 +57,11 @@ jobs:
         run: npm run test
         continue-on-error: true
         
-      -name: Upload appium log  
-      - uses: actions/upload-artifact@v2
+      - name: Upload wdio-appium log
+        uses: actions/upload-artifact@v1
         with:
           name: wdio-appium.log
-          path: ./wdio-appium.log
+          path: wdio-appium.log
 
 
     
