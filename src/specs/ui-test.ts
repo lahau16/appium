@@ -2,7 +2,7 @@ var exec = require('child_process').exec, child;
 
 
 // import { expect } from 'chai';
-describe.skip('Index', () => {
+describe('Index', () => {
   before(async () => {
 ​
     browser.url('https://qasd-test.cybozu.com/k/m/25/');
@@ -120,7 +120,7 @@ describe.skip('Index', () => {
 // });
 
 
-describe('webdriver.io page', () => {
+describe.skip('webdriver.io page', () => {
   it('should have the right title', () => {
     child = exec('curl -v https://qasd-test.cybozu.com',
     function (error: any, stdout: any, stderr: any) {
