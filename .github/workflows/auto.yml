@@ -17,13 +17,13 @@ on:
 
 
 jobs:
-  strategy:
+  
+  test:
+    runs-on: ${{ matrix.os }} # runs a test on Ubuntu, Windows and macOS
+    strategy:
       matrix:
         deno: ["v1.x"]
         os: [macOS-latest]
-  test:
-    runs-on: ${{ matrix.os }} # runs a test on Ubuntu, Windows and macOS
-  
     steps:
       - name: Setup repo
         uses: actions/checkout@v1
@@ -57,6 +57,9 @@ jobs:
         run: npm run test
   getlog:
     needs: test
+    strategy:
+      matrix:
+        os: [macOS-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/upload-artifact@v2
