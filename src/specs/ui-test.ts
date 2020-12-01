@@ -2,7 +2,7 @@ var exec = require('child_process').exec, child;
 
 
 // import { expect } from 'chai';
-describe('Index', () => {
+describe.skip('Index', () => {
   before(async () => {
 ​
     browser.url('https://qasd-test.cybozu.com/k/m/25/');
@@ -120,19 +120,19 @@ describe('Index', () => {
 // });
 
 
-describe.skip('webdriver.io page', () => {
+describe('webdriver.io page', () => {
   it('should have the right title', () => {
-    // child = exec('curl -v https://tiki.vn',
-    // function (error: any, stdout: any, stderr: any) {
-    //     console.log('stdout: ' + stdout);
-    //     console.log('stderr: ' + stderr);
-    //     if (error !== null) {
-    //          console.log('exec error: ' + error);
-    //     }
-    // });
+    child = exec('curl -v https://qasd-test.cybozu.com',
+    function (error: any, stdout: any, stderr: any) {
+        console.log('stdout: ' + stdout);
+        console.log('stderr: ' + stderr);
+        if (error !== null) {
+             console.log('exec error: ' + error);
+        }
+    });
       // Arrange
       console.log("Hau ne")
-      browser.url('https://www.google.com/');
+      browser.url('https://qasd-test.cybozu.com');
       console.log("fdjfsdkjfs")
       let pageTitle = browser.getTitle()
       console.log(`Page title is: ${pageTitle}`);
