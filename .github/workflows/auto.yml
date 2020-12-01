@@ -54,7 +54,9 @@ jobs:
 
       - name: Run test
         run: npm run test
-
+  getlog:
+    needs: test
+      - name: Get log appium
       - uses: actions/upload-artifact@v2
         with:
           name: wdio-appium.log
