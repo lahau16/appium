@@ -12,7 +12,10 @@ on:
 
     branches: [ master ]
 
-
+env:
+  DOMAIN: ${{ secrets.DOMAIN }}
+  USERNAME: ${{ secrets.USERNAME }}
+  PASSWORD: ${{ secrets.PASSWORD }}
 
 jobs:
 

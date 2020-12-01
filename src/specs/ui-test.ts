@@ -5,11 +5,11 @@ var exec = require('child_process').exec, child;
 describe('Index', () => {
   before(async () => {
 ​
-    browser.url('https://qasd-test.cybozu.com/k/m/25/');
+    browser.url(`https://${process.env.DOMAIN}/k/m/25/`);
     const localSettingForDisableWelcomeInfo = 'window.localStorage.setItem("gaia.1::com.cybozu.kintone.mobile.LocalSetting", \'{"v2NavigationPanelButtonTooltipDisplayed":true,"v2WelcomeDialogDisplayed":true}\')';
     browser.executeScript(localSettingForDisableWelcomeInfo, [])
-    browser.$("div.form-username-slash input[name='username']").setValue("admin");
-    browser.$("div.form-password-slash input[name='password']").setValue("qasd@123");
+    browser.$("div.form-username-slash input[name='username']").setValue(`${process.env.USERNAME}`);
+    browser.$("div.form-password-slash input[name='password']").setValue(`${process.env.PASSWORD}`);
     browser.$("input.login-button").click();
     browser.pause(5000);
   });
@@ -38,7 +38,7 @@ describe('Index', () => {
 ​
 // describe('Create', () => {
 //   before(() => {
-//     browser.url('https://qasd-test.cybozu.com/k/m/25/');
+//     browser.url(``https://${process.env.DOMAIN}/k/m/25/`);
 //     $(".gaia-mobile-v2-app-indextoolbar-addrecord-border").click();
 //     browser.pause(5000);
 //   });
@@ -66,7 +66,7 @@ describe('Index', () => {
 // ​
 // describe('Detail', () => {
 //   before(() => {
-//     browser.url('https://qasd-test.cybozu.com/k/m/25/show#record=2');
+//     browser.url(``https://${process.env.DOMAIN}/k/m/25/show#record=2`);
 //     browser.pause(5000);
 //   });
 // ​
@@ -93,7 +93,7 @@ describe('Index', () => {
 // ​
 // describe('Edit', () => {
 //   before(() => {
-//     browser.url('https://qasd-test.cybozu.com/k/m/25/show#record=2');
+//     browser.url(`https://${process.env.DOMAIN}/k/m/25/show#record=2`);
 //     $('.gaia-mobile-v2-app-record-showtoolbar-editrecord-border').click();
 //     browser.pause(5000);
 //   });
@@ -118,23 +118,3 @@ describe('Index', () => {
 //     browser.pause(5000);
 //   });
 // });
-
-
-describe.skip('webdriver.io page', () => {
-  it('should have the right title', () => {
-    child = exec('curl -v https://qasd-test.cybozu.com',
-    function (error: any, stdout: any, stderr: any) {
-        console.log('stdout: ' + stdout);
-        console.log('stderr: ' + stderr);
-        if (error !== null) {
-             console.log('exec error: ' + error);
-        }
-    });
-      // Arrange
-      console.log("Hau ne")
-      browser.url('https://qasd-test.cybozu.com');
-      console.log("fdjfsdkjfs")
-      let pageTitle = browser.getTitle()
-      console.log(`Page title is: ${pageTitle}`);
-  })
-})
