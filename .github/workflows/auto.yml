@@ -55,13 +55,9 @@ jobs:
 
       - name: Run test
         run: npm run test
-  getlog:
-    needs: test
-    strategy:
-      matrix:
-        os: [macOS-latest]
-    runs-on: ${{ matrix.os }}
-    steps:
+        continue-on-error: true
+        
+      -name: Upload appium log  
       - uses: actions/upload-artifact@v2
         with:
           name: wdio-appium.log
