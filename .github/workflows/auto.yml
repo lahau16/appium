@@ -14,15 +14,16 @@ on:
   pull_request:
     branches: [master]
 
-strategy:
+
+
+jobs:
+  strategy:
       matrix:
         deno: ["v1.x"]
         os: [macOS-latest]
-        
-jobs:
   test:
     runs-on: ${{ matrix.os }} # runs a test on Ubuntu, Windows and macOS
-
+  
     steps:
       - name: Setup repo
         uses: actions/checkout@v1
