@@ -43,7 +43,7 @@ describe('Index', () => {
 describe('Create', () => {
   before(() => {
     browser.url(`https://${process.env.DOMAIN}/k/m/717/`);
-    $(".gaia-mobile-v2-app-indextoolbar-addrecord-border").click();
+    browser.$(".gaia-mobile-v2-app-indextoolbar-addrecord-border").click();
     browser.pause(5000);
   });
 ​
@@ -98,7 +98,7 @@ describe('Detail', () => {
 describe('Edit', () => {
   before(() => {
     browser.url(`https://${process.env.DOMAIN}/k/m/717/show#record=1`);
-    $('.gaia-mobile-v2-app-record-showtoolbar-editrecord-border').click();
+    browser.$('.gaia-mobile-v2-app-record-showtoolbar-editrecord-border').click();
     browser.pause(5000);
   });
 ​
